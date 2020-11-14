@@ -1,10 +1,8 @@
 # MyLibSQLiteExample
  
----
-
 This is the example from library [MyLibSQLite](https://github.com/gzeinnumer/MyLibSQLite).
 
-Run this Application on your phone or emulator, please give permission to this app , so it can read your external.
+Run this Application on your `phone` or `emulator`, please give `permission` to this app , so it can read your `external`.
 
 but there is a step that you should do.. what i should do?
 
@@ -25,7 +23,7 @@ but there is a step that you should do.. what i should do?
 4. Here is my table that i use in this example app.
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibSQLiteExample/blob/master/preview/example1.jpg" width="400"/>
+  <img src="https://github.com/gzeinnumer/MyLibSQLiteExample/blob/master/preview/example1.JPG" width="400"/>
 </p>
 
 ```
