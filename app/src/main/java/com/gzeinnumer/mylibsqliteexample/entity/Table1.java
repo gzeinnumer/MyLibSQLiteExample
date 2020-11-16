@@ -29,6 +29,7 @@ public class Table1 extends SQLiteLIB<Table1> {
     @TimeStamp
     public String created_at;
 
+//    @JoinColumn(withTable = "table2", columnName = "name")
     @JoinColumn(withTable = "table2", columnName = "name", alias = "table2_name")
     public String table2_name;
 
