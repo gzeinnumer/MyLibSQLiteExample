@@ -17,8 +17,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "DatabaseHelper";
 
-    protected static final String DATABASE_NAME = "IGSgForce.db";
-    protected static final String DATABASE_NAME_ASSET = "IGSgForce.db";
+    protected static final String DATABASE_NAME = "MyLibSQLiteSimple.db";
+    protected static final String DATABASE_NAME_ASSET = "MyLibSQLiteSimple.db";
     protected static String DB_PATH = "";
     protected static final int DATABASE_VERSION = 4;
     protected final Context context;
