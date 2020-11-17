@@ -1,23 +1,23 @@
 package com.gzeinnumer.mylibsqliteexample.entity;
 
-import com.gzeinnumer.mylibsqlitelib.SQLiteLIB;
-import com.gzeinnumer.mylibsqlitelib.struck.Table;
-import com.gzeinnumer.mylibsqlitelib.typeData.Int;
-import com.gzeinnumer.mylibsqlitelib.typeData.PrimaryKey;
-import com.gzeinnumer.mylibsqlitelib.typeData.Varchar;
+import com.gzeinnumer.mylibsimplesqlite.SQLiteLIB;
+import com.gzeinnumer.mylibsimplesqlite.struck.SQLiteTable;
+import com.gzeinnumer.mylibsimplesqlite.typeData.IntegerTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.PrimaryKeyTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.VarcharTypeData;
 
 import java.util.List;
 
-@Table(tableName = "table2")
+@SQLiteTable(tableName = "table2")
 public class Table2 extends SQLiteLIB<Table2> {
 
-    @PrimaryKey
+    @PrimaryKeyTypeData
     private int id;
 
-    @Varchar
+    @VarcharTypeData
     private String name;
 
-    @Int
+    @IntegerTypeData
     private int id_table1;
 
     public Table2() {}

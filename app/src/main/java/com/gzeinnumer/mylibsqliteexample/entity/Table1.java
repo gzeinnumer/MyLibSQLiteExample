@@ -1,32 +1,32 @@
 package com.gzeinnumer.mylibsqliteexample.entity;
 
+import com.gzeinnumer.mylibsimplesqlite.SQLiteLIB;
+import com.gzeinnumer.mylibsimplesqlite.struck.JoinColumn;
+import com.gzeinnumer.mylibsimplesqlite.struck.SQLiteTable;
+import com.gzeinnumer.mylibsimplesqlite.typeData.DecimalTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.IntegerTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.PrimaryKeyTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.TextTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.TimeStampTypeData;
+import com.gzeinnumer.mylibsimplesqlite.typeData.VarcharTypeData;
 import com.gzeinnumer.mylibsqliteexample.helper.GblVariabel;
-import com.gzeinnumer.mylibsqlitelib.SQLiteLIB;
-import com.gzeinnumer.mylibsqlitelib.struck.JoinColumn;
-import com.gzeinnumer.mylibsqlitelib.struck.Table;
-import com.gzeinnumer.mylibsqlitelib.typeData.Decimal;
-import com.gzeinnumer.mylibsqlitelib.typeData.Int;
-import com.gzeinnumer.mylibsqlitelib.typeData.PrimaryKey;
-import com.gzeinnumer.mylibsqlitelib.typeData.Text;
-import com.gzeinnumer.mylibsqlitelib.typeData.TimeStamp;
-import com.gzeinnumer.mylibsqlitelib.typeData.Varchar;
 
 import java.util.List;
 
-@Table(tableName = "table1")
+@SQLiteTable(tableName = "table1")
 public class Table1 extends SQLiteLIB<Table1> {
 
-    @PrimaryKey
+    @PrimaryKeyTypeData
     public int id;
-    @Varchar
+    @VarcharTypeData
     public String name;
-    @Decimal
+    @DecimalTypeData
     public double rating;
-    @Text
+    @TextTypeData
     public String desc;
-    @Int
+    @IntegerTypeData
     public int flag_active;
-    @TimeStamp
+    @TimeStampTypeData
     public String created_at;
 
 //    @JoinColumn(withTable = "table2", columnName = "name")
