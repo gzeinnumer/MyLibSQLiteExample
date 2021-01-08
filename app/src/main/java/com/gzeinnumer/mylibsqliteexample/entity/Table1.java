@@ -49,16 +49,18 @@ public class Table1 extends SQLiteLIB<Table1> {
         return insertData(Table1.class, GblVariabel.myDb, data);
     }
 
-    //UPDATE table1 SET name='Name Update', desc='Desc Update', flag_active='' WHERE id='1';
+    //UPDATE table1 SET name='Name Update', desc='Desc Update', flag_active='0' WHERE id='1';
     public boolean update() {
         //set your value to update
         Table1 data = new Table1();
-        data.setName("Name Update");
+        data.setName("Name Update1");
         data.setDesc("Desc Update");
         data.setFlag_active(0);
 
-        String condition = "WHERE id='1'";                            //for single condition
-        //String condition = "WHERE id='1' AND flag_Active='1'";      //for multi condition
+        //String condition = "";                                    //to update all data
+        //String condition = "WHERE 1";                             //to update all data
+        String condition = "WHERE id='1'";                          //for single condition
+        //String condition = "WHERE id='1' AND flag_Active='1'";    //for multi condition
 
         String[] fieldToUpdate = new String[]{
                 "name",
@@ -71,9 +73,11 @@ public class Table1 extends SQLiteLIB<Table1> {
 
     //DELETE FROM table1 WHERE id='1';
     public boolean delete() {
+        //String condition = "";                                    //to delete all data
+        //String condition = "WHERE 1";                             //to delete all data
         String condition = "WHERE id='1'";                          //for single condition
         //String condition = "WHERE id='1' AND flag_Active='1'";    //for multi condition
-        //String condition = "1";                               //to delete all data
+
         return deleteData(Table1.class, GblVariabel.myDb, condition);
     }
 
