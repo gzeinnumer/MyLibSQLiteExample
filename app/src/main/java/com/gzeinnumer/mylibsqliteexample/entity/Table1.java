@@ -1,14 +1,14 @@
 package com.gzeinnumer.mylibsqliteexample.entity;
 
-import com.gzeinnumer.mylibsimplesqlite.SQLiteLIB;
-import com.gzeinnumer.mylibsimplesqlite.struck.JoinColumn;
-import com.gzeinnumer.mylibsimplesqlite.struck.SQLiteTable;
-import com.gzeinnumer.mylibsimplesqlite.typeData.DecimalTypeData;
-import com.gzeinnumer.mylibsimplesqlite.typeData.IntegerTypeData;
-import com.gzeinnumer.mylibsimplesqlite.typeData.PrimaryKeyTypeData;
-import com.gzeinnumer.mylibsimplesqlite.typeData.TextTypeData;
-import com.gzeinnumer.mylibsimplesqlite.typeData.TimeStampTypeData;
-import com.gzeinnumer.mylibsimplesqlite.typeData.VarcharTypeData;
+import com.gzeinnumer.esc.SQLiteLIB;
+import com.gzeinnumer.esc.struck.JoinColumn;
+import com.gzeinnumer.esc.struck.SQLiteTable;
+import com.gzeinnumer.esc.typeData.DecimalTypeData;
+import com.gzeinnumer.esc.typeData.IntegerTypeData;
+import com.gzeinnumer.esc.typeData.PrimaryKeyTypeData;
+import com.gzeinnumer.esc.typeData.TextTypeData;
+import com.gzeinnumer.esc.typeData.TimeStampTypeData;
+import com.gzeinnumer.esc.typeData.VarcharTypeData;
 import com.gzeinnumer.mylibsqliteexample.helper.GblVariabel;
 
 import java.util.List;
